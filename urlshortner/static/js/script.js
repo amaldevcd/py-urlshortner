@@ -6,7 +6,8 @@ $(document).on('submit','#post-form',function(e){e.preventDefault();
             link:$('#link').val(),
             csrfmiddlewaretoken:$('input[name=csrfmiddlewaretoken]').val(),
         },
-        success:function(){
+        success:function(data){
+            $('h5').html("localhost:8000/"+data)
 
         },
     });
