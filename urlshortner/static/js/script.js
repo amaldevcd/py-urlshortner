@@ -7,8 +7,15 @@ $(document).on('submit','#post-form',function(e){e.preventDefault();
             csrfmiddlewaretoken:$('input[name=csrfmiddlewaretoken]').val(),
         },
         success:function(data){
-            $('h5').html("localhost:8000/"+data)
+            $("textarea").html("localhost:8000/"+data)
 
         },
     });
 });
+function myFunction() {
+    var copyText = document.getElementById("h5");
+    copyText.select();
+    copyText.setSelectionRange(0, 99999);
+    document.execCommand("copy");
+    console.log("coppied successfully");
+}

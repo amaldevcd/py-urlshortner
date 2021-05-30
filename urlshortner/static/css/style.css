@@ -6,13 +6,15 @@
     justify-content: center;
     flex-flow: column;
     height: 800px;
+    overflow: auto;
 }
 .box 
 {
     margin-top: 5%;
-    border-radius: 6px;  
+    border-radius: 6px; 
     padding: 5%;
     color: white;
+    background-color:rebeccapurple!important;
 }
 .form-control-lg
 {
